@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS e Fontawesome -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="https://kit.fontawesome.com/7af92db44c.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!--Criação do cabeçalho/menu-->  
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b1913;">
+      <!--Colocação em um container para limitar a sua largura; utilização do toggler para obter o plugin de de recolhimento e outros comportamentos de alternância de navegação (Componente Responsivo); utilização do collapse para agrupar e ocultar o conteúdo da barra de navegação por um ponto de interrupção pai; -->
+      <div class="container">
+        <a class="navbar-brand h1 mb=0" href="#">My Planner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulações.html">Formulações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enciclopédia.html">Enciclopédia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dicas.html">Dicas</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navDrop">Redes Sociais</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.facebook.com/Taylu-104151644361681/?ref=pages_you_manage">Facebook</a>
+              <a class="dropdown-item" href="https://www.instagram.com/_taylu/">Instagram</a>
+              <a class="dropdown-item" href="https://www.youtube.com/channel/UC5ZotlmLTaLb7z5COx8zeAA">Youtube</a>
+            </div>
+            </li>
+          </ul>
+
+          <form class="form-inline">
+            <input class="form-control-sm ms-2 me-0" type="search" placeholder="Buscar...">
+            <button class="btn btn-outline-light btn-sm" type="Submit">Ok</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Criação do formulário-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-2">
+          <h3 class="display-6"><i class="fas fa-envelope text-danger"></i>Fale Conosco</h3>
+        </div>  
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <form>
+            <div class="row g-2 my-2">
+              <div class="form-group col-6">
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">                
+              </div>
+
+              <div class="form-group col-6">
+                <label for="inputSobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+              </div>
+            </div>
+
+            <div class="row g-2 my-2">
+              <div class="form-group">
+                <label for="inputEnd">Endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+              </div>
+            </div>
+
+            <div class="row g-2 my-2">
+              <div class="form-group col-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+              </div>
+
+              <div class="form-group col-4">
+                <label for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha</option>
+                  <option>SP</option>
+                  <option>SC</option>
+                  <option>RS</option>
+                </select>
+              </div>
+
+              <div class="form-group col-2">
+                <label for="inputCep">Cep</label>
+                <input type="text" class="form-control" id="inputCep" placeholder="Cep">
+              </div>
+            </div>
+              
+            <div class="row g-2 my-2">
+              <div class="mb-3">
+                <label for="inputTextarea" class="form-label">Escreva aqui</label>
+                <textarea class="form-control" id="inputTextarea" rows="3"></textarea>
+              </div>
+            </div>
+            
+            <div class="row g-2 my-2">
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inputCheck">
+                  <label class="form-check-label" for="inputCheck"> Deseja receber mais novidades no e-mail? </label>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <!--Criação de um popover. Para poder funcionar o popover, é necessário fazer a chamada do poppover.js, posteriormente adicionar o código em JavaScript para possibilitar o acionamento do popover. Para o funcionamento correto do popover, utiliza-se o tooltip-->
+            <div class="row g-2 my-2">
+              <div class="form-group col-sm-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" 
+                data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" title="Ajuda" data-bs-content="Clique para registrar seus dados." role="tooltip">Ajuda</button>
+                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script>
+                  const button = document.querySelector('#button');
+                  const tooltip = document.querySelector('#tooltip');
+
+                  const popperInstance = Popper.createPopper(button, tooltip);
+                </script>
+                
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--Criação do rodapé no mesmo container do formulário-->
+      <div class="row">
+        <div class="col-12 mb-2"><hr></div>
+        <div class="col-sm-4">
+          <h5>Taylu Saboaria e Cosméticos</h5>
+          <p>Os produtos são feitos com a utilização de elementos primários, como óleos e manteigas vegetais, óleos essenciais e álcalis, sem uso de maquinário pesado. Além disso, os cosméticos do-it-yourself (faça você mesmo) também estão em crescimento e movimentam uma vasta comunidade na internet, onde pessoas compartilham suas experiências e receitas de produtos caseiros para cuidado pessoal.</p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Institucional</h5>
+          <div class="list-group">
+            <a href="sobre.html" class="list-group-item list-group-item-action">Sobre</a>
+            <a href="privacidade.html" class="list-group-item list-group-item-action">Privacidade</a>
+            <a href="#topo.html" class="list-group-item list-group-item-action">Fale Conosco</a>
+            <a href="desenvolvedor.html" class="list-group-item list-group-item-action">Desenvolvedor</a>
+          </div>
+        </div>
+        <div class="col-sm-4 mw-100">
+          <h5>Social</h5>
+          <nav class="nav flex-column">
+            <a class="nav-link active text-primary" aria-current="page" href="https://www.facebook.com/Taylu-104151644361681/?ref=pages_you_manage"><i class="fab fa-facebook"></i> Facebook</a>
+            <a class="nav-link text-warning" href="https://www.instagram.com/_taylu/"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="nav-link text-danger" href="https://www.youtube.com/channel/UC5ZotlmLTaLb7z5COx8zeAA"><i class="fab fa-youtube"></i> Youtube</a>
+          </nav>
+        </div>
+
+        <div class="col-12 my-5">
+          <blockquote class="blockquote text-center">
+            <p class="mb-2">“Quem faz artesanato não vende apenas um produto, vende um pedacinho do coração.”</p>
+            <footer class="blockquote-footer">Taylu <cite title="Source Title">Saboaria e Cosméticos</cite></footer>
+          </blockquote>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; Option 1: Bootstrap Bundle with Popper; Option 2: Separate Popper and Bootstrap JS-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
+  
+  </body>
+</html>

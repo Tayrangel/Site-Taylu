@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS e Fontawesome -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="https://kit.fontawesome.com/7af92db44c.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!--Criação do cabeçalho/menu-->  
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b1913;">
+      <!--Colocação em um container para limitar a sua largura; utilização do toggler para obter o plugin de de recolhimento e outros comportamentos de alternância de navegação (Componente Responsivo); utilização do collapse para agrupar e ocultar o conteúdo da barra de navegação por um ponto de interrupção pai; -->
+      <div class="container">
+        <a class="navbar-brand h1 mb=0" href="#">Taylu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulações.html">Formulações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enciclopédia.html">Enciclopédia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#topo.html">Dicas</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navDrop">Redes Sociais</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.facebook.com/Taylu-104151644361681/?ref=pages_you_manage">Facebook</a>
+              <a class="dropdown-item" href="https://www.instagram.com/_taylu/">Instagram</a>
+              <a class="dropdown-item" href="https://www.youtube.com/channel/UC5ZotlmLTaLb7z5COx8zeAA">Youtube</a>
+            </div>
+            </li>
+          </ul>
+
+          <form class="form-inline">
+            <input class="form-control-sm ms-2 me-0" type="search" placeholder="Buscar...">
+            <button class="btn btn-outline-light btn-sm" type="Submit">Ok</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+     <!--Criação de cards-->
+      <div class="row justify-content-center row-cols-md-3 my-5">
+        <div class="col-sm-6 col-md-4">
+          <div class="card" style="width: 25rem;">
+            <div class="card-head text-center">
+            Argilas 
+            </div>
+            <img class="card-img-top" src="imagens/cards (7).png">
+            <div class="card-body">
+              <h5 class="card-title">Tipos e benefícios para pele!</h5>
+              <p class="card-text">Para saber mais, confira no link!</p>
+              <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#siteModal">Link aqui!</a>
+            <div class="card-footer text-muted">
+              Taylu Saboaria e Cosméticos
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card" style="width: 25rem;">
+            <div class="card-head text-center">
+            Skin Care  
+            </div>
+            <img class="card-img-top" src="imagens/cards (8).png">
+            <div class="card-body">
+              <h5 class="card-title">Rotina</h5>
+              <p class="card-text">Para saber mais, confira no link!</p>
+              <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#siteModal2">Link aqui!</a>
+            </div>
+            <div class="card-footer text-muted">
+              Taylu Saboaria e Cosméticos
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Criação do Jumbotron (adaptado para versão 5) e Nav Pills-->
+      <div class="container-fluid bg-dark text-white mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h5 class="display-4"><i class="fab fa-youtube text-danger fs-2"></i> Youtube</h5>
+            <p class="lead">Um canal para você que ama cosméticos!</p>
+            <hr>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-3" id="pills-nav" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="nav-pills-01" data-bs-toggle="pill" href="#nav-item-01">Vídeo 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-pills-02" data-bs-toggle="pill" href="#nav-item-02">Vídeo 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-pills-03" data-bs-toggle="pill" href="#nav-item-03">Vídeo 3</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="nav-pills-content">
+              <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-5 text-end">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qdy-KY_5JA8"></iframe>
+                      </div>
+                  </div>
+                  <div class="col-sm-7 justify-content-center">
+                      <p>Todos nós conhecemos alguma receita de sabonete. Mas você já se perguntou quando surgiu o mundo da saboaria? Se quer conhecer mais sobre esse mundo, temos um vídeo no nosso canal!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-5 text-end">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7trnjSKTqPE"> 
+                        </iframe>
+                      </div>
+                  </div>
+                  <div class="col-sm-7 justify-content-center">
+                      <p>Como não amar um sabonete tão cheiroso e cheio de benefícios. Trouxe a vocês essa criação que é o Prunus Persica Taylu. O sabonete em barra Persica traz suavidade como um calmante geral, afastando a tristeza com o aroma de fruta adocicada do Pessêgo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-5 text-end">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XXzAT5J9lIU"></iframe>
+                      </div>
+                  </div>
+                  <div class="col-sm-7 justify-content-center">
+                      <p>Se você ainda não é apaixonado por cosméticos, depois desse vídeo você irá ficar!E aí está preparada pra aprender? Então bora lá!</p>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Criação do formulário-->
+    <div class="container-fluid bg-light">
+      <!--Criação do rodapé no mesmo container do formulário-->
+      <div class="row">
+        <div class="col-12 mb-2"><hr></div>
+        <div class="col-sm-4">
+          <h5>Taylu Saboaria e Cosméticos</h5>
+          <p>Os produtos são feitos com a utilização de elementos primários, como óleos e manteigas vegetais, óleos essenciais e álcalis, sem uso de maquinário pesado. Além disso, os cosméticos do-it-yourself (faça você mesmo) também estão em crescimento e movimentam uma vasta comunidade na internet, onde pessoas compartilham suas experiências e receitas de produtos caseiros para cuidado pessoal.</p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Institucional</h5>
+          <div class="list-group">
+            <a href="sobre.html" class="list-group-item list-group-item-action">Sobre</a>
+            <a href="privacidade.html" class="list-group-item list-group-item-action">Privacidade</a>
+            <a href="faleconosco.html" class="list-group-item list-group-item-action">Fale Conosco</a>
+            <a href="desenvolvedor.html" class="list-group-item list-group-item-action">Desenvolvedor</a>
+          </div>
+        </div>
+        <div class="col-sm-4 mw-100">
+          <h5>Social</h5>
+          <nav class="nav flex-column">
+            <a class="nav-link active text-primary" aria-current="page" href="https://www.facebook.com/Taylu-104151644361681/?ref=pages_you_manage"><i class="fab fa-facebook"></i> Facebook</a>
+            <a class="nav-link text-warning" href="https://www.instagram.com/_taylu/"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="nav-link text-danger" href="https://www.youtube.com/channel/UC5ZotlmLTaLb7z5COx8zeAA"><i class="fab fa-youtube"></i> Youtube</a>
+          </nav>
+        </div>
+
+        <div class="col-12 my-5">
+          <blockquote class="blockquote text-center">
+            <p class="mb-2">“Quem faz artesanato não vende apenas um produto, vende um pedacinho do coração.”</p>
+            <footer class="blockquote-footer">Taylu <cite title="Source Title">Saboaria e Cosméticos</cite></footer>
+          </blockquote>          
+        </div>
+      </div>
+    </div>
+
+<!-- Criação do conteúdo Modal-->
+    <div class="modal" id="siteModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Argilas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Argila Branca</h5><p>A argila branca possui um PH muito próximo da pele, o que faz absorver a oleosidade sem desidratar. Também ajuda clarear a pele, como desobstruir os poros, suavizar e cicatrizar. <b>Rica em alumínio.</b></p>
+            <h5>Argila Verde</h5><p>A argila verde tem ação adstringente, esfoliante, tonificante, estimulante e secativa. Ajuda regular a produção de sebo da cútis e fechar os poros do rosto. Este tipo de argila também é antibactericida. <b>Rica em alumínio e silício.</b></p>
+            <h5>Argila Preta</h5><p>A argila mais nobre de todas, é conhecida também como lama vulcânica, tem ação anti-idade, anti-inflamatória, desintoxicante e cicatrizante. Ajuda a atenuar manchas na pele e favorece a renovação celular. <b>Rica em matéria orgânica, enxofre e titânio.</b></p>
+            <h5>Argila Vermelha</h5><p>Pode ser usada por todos os outros tipos de pele, sem contraindicação. É hidratante, antioxidante e regenerador, ela combate os radicais livres prevenindo o envelhecimento precoce da pele. Redutora de pesos e medidas, também é indicada para uso corporal. <b>Rica em óxido ferro, cobre e silício.</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="siteModal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rotina Skin Care</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+              <div class="col-6">
+                <h5>Sabonete Facial</h5><p>Comece lavando o rosto com o sabonete específico para o seu tipo de pele. ma limpeza correta remove as impurezas, oleosidade em excesso, sujidade e poluição acumulada durante o dia, as células mortas e a maquiagem superficial.</p>
+                <h5>Tônico</h5><p>Depois de lavar, passe um algodão embebido com tônico. Ajuda a remover os vestígios de impurezas ainda presentes na pele, diminui o tamanho dos poros e prepara a pele para receber os ingredientes ativos.</p>
+              </div>
+
+              <div class="col-6">
+                <h5>Esfoliante</h5><p>Aplique o produto e faça movimentos circulares em todo o rosto, especialmente na região T. Uniformiza a textura da sua pele e elimina os cravos. A esfoliação é um passo muito importante, porque ajuda a remover as células mortas, a desobstruir os poros e a promover a renovação celular. <b>Realizado 2x na semana</b></p>
+                <h5>Hidratante</h5><p>Aplique o produto e massageie com a ponta dos dedos em movimentos ascendentes e rotatórios. O creme de dia e/ou de noite serve para hidratar, nutrir e proteger a pele contra as agressões externas, tais como a poluição. Este produto deve ser aplicado no rosto, pescoço e colo.</p>
+              </div>                
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; Option 1: Bootstrap Bundle with Popper; Option 2: Separate Popper and Bootstrap JS-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
+  
+  </body>
+</html>
